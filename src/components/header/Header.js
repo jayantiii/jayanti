@@ -15,7 +15,7 @@ function Header(props) {
     height: "45px",
     width: "45px",
     marginRight: "5px",
-    marginLeft: "15px",
+    marginLeft: "10px",
     paddingTop: "5px",
     borderRadius: "50%",
     border: "none",

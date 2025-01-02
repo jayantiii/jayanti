@@ -1,11 +1,13 @@
 import React from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { greeting } from "../../portfolio";
+import { greeting, contactPageData } from "../../portfolio";
 import { Fade } from "react-reveal";
 import { useHistory } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
+
+const ContactData = contactPageData.contactSection;
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -50,12 +52,13 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* <FeelingProud theme={theme} /> */}
-            {/* <img
+            <div>
+              <img
                 className="profile-pic"
                 src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
                 alt=""
-              /> */}
+              />
+            </div>
           </div>
         </div>
       </div>
