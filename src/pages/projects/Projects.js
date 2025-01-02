@@ -23,7 +23,7 @@ function Projects(props) {
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-projects">
         <Fade bottom duration={2000} distance="40px">
-          <div className="projects-heading-div">
+          {/* <div className="projects-heading-div">
             <div className="projects-heading-img-div">
               <ProjectsImg theme={theme} />
             </div>
@@ -41,7 +41,7 @@ function Projects(props) {
                 {projectsHeader["description"]}
               </p>
             </div>
-          </div>
+          </div> */}
         </Fade>
       </div>
       <div className="repo-cards-div-main">

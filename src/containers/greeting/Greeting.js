@@ -50,7 +50,12 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
+            {/* <FeelingProud theme={theme} /> */}
+            {/* <img
+                className="profile-pic"
+                src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
+                alt=""
+              /> */}
           </div>
         </div>
       </div>

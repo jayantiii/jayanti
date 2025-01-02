@@ -13,7 +13,7 @@ function Education(props) {
     <div className="education-main">
       <Header theme={props.theme} setTheme={props.setTheme} />
       <div className="basic-education">
-        <Fade bottom duration={2000} distance="40px">
+        {/* <Fade bottom duration={2000} distance="40px">
           <div className="heading-div">
             <div className="heading-img-div">
               <EducationImg theme={theme} />
@@ -34,7 +34,7 @@ function Education(props) {
               </p>
             </div>
           </div>
-        </Fade>
+        </Fade> */}
         <Educations theme={props.theme} />
         <Certifications theme={props.theme} />
       </div>

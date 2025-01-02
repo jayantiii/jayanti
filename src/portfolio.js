@@ -9,68 +9,60 @@ const settings = {
 
 //Home Page
 const greeting = {
-  title: "Hello 👋.",
-  title2: "Harikrushn",
-  logo_name: "harry.k()",
-  nickname: "harry / picleric",
-  full_name: "Harikrushn Kanani",
-  subTitle: "Backend Developer, Open Source Enthusiast 🔥. Always learning.",
+  title: "Hey!",
+  title2: "Jayanti",
+  logo_name: "Jayanti Lahoti",
+  nickname: "Jayanti",
+  full_name: "Jayanti Lahoti",
+  subTitle:
+    "MSCS@ University of Caalifornia, San Diego. \n I m looking for summer 2025 tech internships in USA",
   resumeLink:
     "https://drive.google.com/file/d/1J-6kMaW67JG_AU9rzYwlGCZjge-Nzkhl/view?usp=sharing",
-  mail: "mailto:hkanani191@gmail.com",
+  mail: "mailto:jlahoti@ucsd.edu",
 };
 
 const socialMediaLinks = {
   /* Your Social Media Link */
-  github: "https://github.com/harikanani",
-  linkedin: "https://www.linkedin.com/in/harikrushn-kanani/",
-  gmail: "hkanani191@gmail.com",
-  gitlab: "https://gitlab.com/harikanani",
+  github: "https://github.com/jayantiii",
+  linkedin: "https://www.linkedin.com/in/jayanti-lahoti/",
+  gmail: "jlahoti@ucsd.edu",
+  // gitlab: "https://gitlab.com/harikanani",
   // facebook: "https://www.facebook.com/harikrishan.kanani/",
-  twitter: "https://twitter.com/Harikrushn9",
-  instagram: "https://www.instagram.com/hari_kanani_/",
+  // twitter: "https://twitter.com/Harikrushn9",
+  // instagram: "https://www.instagram.com/hari_kanani_/",
 };
 
 const skills = {
   data: [
     {
-      title: "Backend Development",
+      title: "ML and Computer Vision",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-        "⚡ Building responsive website front end using ReactJS",
-        "⚡ Developing mobile applications using Flutter and Android",
-        "⚡ Creating application backend in Node, Express & Flask",
-        "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean",
+        "⚡ Designing and deploying machine learning models for image classification and object detection",
+        "⚡ Developing computer vision applications using TensorFlow, PyTorch, and OpenCV",
+        "⚡ Implementing end-to-end ML pipelines from data preprocessing to model deployment",
       ],
       softwareSkills: [
         {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
+          skillName: "OpenCV",
+          fontAwesomeClassname: "simple-icons:opencv",
           style: {
-            color: "#E34F26",
+            color: "#5C3EE8",
           },
         },
         {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
+          skillName: "Tensorflow",
+          fontAwesomeClassname: "simple-icons:tensorflow",
           style: {
             backgroundColor: "#FFFFFF",
-            color: "#F7DF1E",
+            color: "#FF6F00",
           },
         },
         {
-          skillName: "PHP",
-          fontAwesomeClassname: "simple-icons:php",
+          skillName: "Scikit Learn",
+          fontAwesomeClassname: "simple-icons:scikitlearn",
           style: {
-            color: "#7377AD",
+            color: "#F7931E",
           },
         },
         {
@@ -95,8 +87,8 @@ const skills = {
           },
         },
         {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
+          skillName: "Python",
+          fontAwesomeClassname: "simple-icons:Python",
           style: {
             color: "#439743",
           },
@@ -108,20 +100,13 @@ const skills = {
         //     color: "#DE33A6",
         //   },
         // },
-        {
-          skillName: "Android",
-          fontAwesomeClassname: "simple-icons:android",
-          style: {
-            color: "#3DDC84",
-          },
-        },
-        {
-          skillName: "Java",
-          fontAwesomeClassname: "simple-icons:java",
-          style: {
-            color: "#f89820",
-          },
-        },
+        // {
+        //   skillName: "Android",
+        //   fontAwesomeClassname: "simple-icons:android",
+        //   style: {
+        //     color: "#3DDC84",
+        //   },
+        // },
         // {
         //   skillName: "Flutter",
         //   fontAwesomeClassname: "simple-icons:flutter",
@@ -150,25 +135,11 @@ const skills = {
             color: "#4479A1",
           },
         },
-        // {
-        //   skillName: "jQuery",
-        //   fontAwesomeClassname: "simple-icons:jquery",
-        //   style: {
-        //     color: "#0865A6",
-        //   },
-        // },
         {
           skillName: "Wordpress",
           fontAwesomeClassname: "simple-icons:wordpress",
           style: {
             color: "#207297",
-          },
-        },
-        {
-          skillName: "Apache",
-          fontAwesomeClassname: "simple-icons:apache",
-          style: {
-            color: "#CA1A22",
           },
         },
         {
@@ -186,12 +157,150 @@ const skills = {
           },
         },
         {
-          skillName: "C++",
-          fontAwesomeClassname: "simple-icons:cplusplus",
+          skillName: "Python",
+          fontAwesomeClassname: "simple-icons:python",
+          style: {
+            color: "#3776AB",
+          },
+        },
+      ],
+    },
+    {
+      title: "Backend and Frontend Development",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
+        "⚡ Building responsive website front end using ReactJS",
+        "⚡ Creating application backend in Node, Express",
+      ],
+      softwareSkills: [
+        {
+          skillName: "HTML5",
+          fontAwesomeClassname: "simple-icons:html5",
+          style: {
+            color: "#E34F26",
+          },
+        },
+        {
+          skillName: "CSS3",
+          fontAwesomeClassname: "fa-css3",
+          style: {
+            color: "#1572B6",
+          },
+        },
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "simple-icons:javascript",
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#F7DF1E",
+          },
+        },
+        {
+          skillName: "Typescript",
+          fontAwesomeClassname: "simple-icons:typescript",
+          style: {
+            color: "#7377AD",
+          },
+        },
+        {
+          skillName: "ReactJS",
+          fontAwesomeClassname: "simple-icons:react",
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
+          skillName: "NodeJS",
+          fontAwesomeClassname: "simple-icons:node-dot-js",
+          style: {
+            color: "#339933",
+          },
+        },
+        {
+          skillName: "NPM",
+          fontAwesomeClassname: "simple-icons:npm",
+          style: {
+            color: "#CB3837",
+          },
+        },
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "simple-icons:Python",
+          style: {
+            color: "#439743",
+          },
+        },
+        // {
+        //   skillName: "GraphQL",
+        //   fontAwesomeClassname: "simple-icons:graphql",
+        //   style: {
+        //     color: "#DE33A6",
+        //   },
+        // },
+        // {
+        //   skillName: "Android",
+        //   fontAwesomeClassname: "simple-icons:android",
+        //   style: {
+        //     color: "#3DDC84",
+        //   },
+        // },
+        // {
+        //   skillName: "Flutter",
+        //   fontAwesomeClassname: "simple-icons:flutter",
+        //   style: {
+        //     color: "#02569B",
+        //   },
+        // },
+        // {
+        //   skillName: "Dart",
+        //   fontAwesomeClassname: "simple-icons:dart",
+        //   style: {
+        //     color: "#29B0EE",
+        //   },
+        // },
+        // {
+        //   skillName: "Visual Basic",
+        //   fontAwesomeClassname: "simple-icons:dot-net",
+        //   style: {
+        //     color: "#029FCE",
+        //   },
+        // },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: {
+            color: "#4479A1",
+          },
+        },
+        {
+          skillName: "Wordpress",
+          fontAwesomeClassname: "simple-icons:wordpress",
+          style: {
+            color: "#207297",
+          },
+        },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
           style: {
             color: "#E94E32",
           },
         },
+        {
+          skillName: "C",
+          fontAwesomeClassname: "simple-icons:c",
+          style: {
+            color: "#E94E32",
+          },
+        },
+        // {
+        //   skillName: "C++",
+        //   fontAwesomeClassname: "simple-icons:cplusplus",
+        //   style: {
+        //     color: "#E94E32",
+        //   },
+        // },
         {
           skillName: "Python",
           fontAwesomeClassname: "simple-icons:python",
@@ -205,28 +314,21 @@ const skills = {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
+        "⚡ Experience working as a Cloud Developer",
         "⚡ Experience hosting and managing websites",
-        "⚡ Experience with Continuous Integration",
+        "⚡ Experience with Continuous Integration and Continuous Deployment",
       ],
       softwareSkills: [
         {
-          skillName: "AWS",
+          skillName: "Azure",
           fontAwesomeClassname: "simple-icons:amazonaws",
           style: {
             color: "#FF9900",
           },
         },
         {
-          skillName: "Netlify",
-          fontAwesomeClassname: "simple-icons:netlify",
-          style: {
-            color: "#38AFBB",
-          },
-        },
-        {
-          skillName: "Heroku",
-          fontAwesomeClassname: "simple-icons:heroku",
+          skillName: "Jenkins",
+          fontAwesomeClassname: "simple-icons:jenkins",
           style: {
             color: "#6863A6",
           },
@@ -238,20 +340,13 @@ const skills = {
             color: "#FFCA28",
           },
         },
-        {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
-          style: {
-            color: "#336791",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
-        },
+        // {
+        //   skillName: "PostgreSQL",
+        //   fontAwesomeClassname: "simple-icons:postgresql",
+        //   style: {
+        //     color: "#336791",
+        //   },
+        // },
         {
           skillName: "Docker",
           fontAwesomeClassname: "simple-icons:docker",
@@ -274,30 +369,22 @@ const skills = {
 const degrees = {
   degrees: [
     {
-      title: "Shantilal Shah Engineering College",
-      subtitle: "Bachelor in Information Technology",
-      logo_path: "ssec.png",
-      alt_name: "SSEC",
-      duration: "2021 - 2024",
-      descriptions: [
-        "⚡ I have studied core subjects like Machine Learning, Computer Vision, Advanced Web Development.",
-        "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
-      ],
-      website_link: "http://www.ssgec.ac.in/",
+      title: "University of California, San Diego",
+      subtitle: "MS in Computer Science",
+      logo_path: "ucsd.png",
+      alt_name: "UCSD",
+      duration: "Sept 2024 - Current",
+      descriptions: [],
+      website_link: "https://ucsd.edu/",
     },
     {
-      title: "Dr. S. & S. S. Ghandhy College Of Engineering & Technology",
-      subtitle: "Diploma in Information Technology",
-      logo_path: "ssgandhy.png",
+      title: "BMS College Of Engineering",
+      subtitle: "B.E in Computer Science",
+      logo_path: "bmsce.jpg",
       alt_name: "SSGC",
       duration: "2018 - 2021",
-      descriptions: [
-        "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
-        "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
-        "⚡ I have secured 9.82 CGPA.",
-      ],
-      website_link: "http://www.ssgc.cteguj.in/",
+      descriptions: [],
+      website_link: "https://www.bmsce.ac.in/",
     },
   ],
 };
@@ -305,56 +392,56 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "M0001: MongoDB Basics",
-      subtitle: "MongoDB University",
-      logo_path: "mongo.png",
+      title: "Azure AI Fundamentals",
+      subtitle: "Microsoft Certified",
+      logo_path: "azure.png",
       certificate_link:
-        "https://drive.google.com/file/d/12se6bMep48WXA1PlizTBAgCnW0GXM6wq/view?usp=sharing",
-      alt_name: "MongoDB University",
+        "https://www.credly.com/badges/e062f0fb-85b6-47f4-9086-b8609e70ad0f/public_url",
+      alt_name: "",
       // color_code: "#2AAFED",
       color_code: "#47A048",
     },
     {
-      title: "Hackathon",
+      title: "Intermediate Machine Learning",
       subtitle: "Hack The Mountains",
-      logo_path: "hackathon1.svg",
+      logo_path: "kaggle.png",
       certificate_link:
-        "https://drive.google.com/file/d/1Y-HT1flWDfeyfnfqVr3ubNgGIcnuUEYt/view?usp=sharing",
-      alt_name: "hackathon",
+        "https://www.kaggle.com/learn/certification/jayantii/intermediate-machine-learning",
+      alt_name: "",
       color_code: "#E2405F",
     },
     {
-      title: "A300: Atlas Security",
-      subtitle: "MongoDB University",
-      logo_path: "mongo.png",
+      title: "Tensorflow Developer",
+      subtitle: "Google Certified",
+      logo_path: "tensor.png",
       certificate_link:
         "https://drive.google.com/file/d/12u_tkvhgB-K2TIm-RDdJOwYbQ9ccqiqA/view?usp=sharing",
-      alt_name: "MongoDB University",
+      alt_name: "",
       // color_code: "#F6B808",
       color_code: "#47A048",
     },
     {
-      title: "Cyber Security & Cyber Forensics",
-      subtitle: "Workshop at IIT Bombay",
-      logo_path: "iit.png",
+      title: "Scaled Agile Framework (SAFe) 6 Practitioner,",
+      subtitle: "",
+      logo_path: "safe.png",
       certificate_link:
         "https://drive.google.com/file/d/12uAdjQC5LfrB1ODdxqIY181ugyyQhl-I/view?usp=sharing",
       alt_name: "Workshop",
-      color_code: "#2AAFED",
+      color_code: "",
     },
     {
-      title: "MLH Local Hack Day: Build",
+      title: "Amazon ML Summer school 2022",
       subtitle: "Major League Hacking",
-      logo_path: "mlh-logo.svg",
+      logo_path: "amazonml.png",
       certificate_link:
         "https://drive.google.com/file/d/1ws7g2Oepu76vDFir6SvR_emFAMSkB2ZQ/view?usp=sharing",
       alt_name: "Google",
       color_code: "#fe0037",
     },
     {
-      title: "Hack20",
-      subtitle: "Flutter International Hackathon",
-      logo_path: "flutter.png",
+      title: "Hacktoberfest",
+      subtitle: "Open Source Contribution",
+      logo_path: "hackfest.png",
       certificate_link:
         "https://drive.google.com/file/d/1JTd8pVlHbP0RVQYtfa4OZgJYGfdiCwM6/view?usp=sharing",
       alt_name: "Flutter International Hackathon",
@@ -394,12 +481,12 @@ const experience = {
       title: "Work Experience",
       experiences: [
         {
-          title: "Software Engineer",
-          company: "Crest Infosystems Pvt. Ltd.",
-          company_url: "https://www.crestinfosystems.com/",
-          logo_path: "crest.png",
-          duration: "Jan 2024 - Present",
-          location: "Surat, Gujarat",
+          title: "System Software Engineer / Cloud Developer",
+          company: "Hewlett Packard Enterpse",
+          company_url: "https://www.hpe.com/",
+          logo_path: "hpe.png",
+          duration: "Aug 2024 - Present",
+          location: "Bengaluru, India",
           description: `Worked on enterprise-level software solutions including employee
 activity tracking system, point of sale system and support ticket
 systems, utilizing full-stack technologies and custom integrations. Improved system efficiency and user experience across
@@ -411,12 +498,13 @@ performance.`,
           color: "#0071C5",
         },
         {
-          title: "Node.js Backend Developer",
-          company: "Valora Infotech",
-          company_url: "http://valorainfotech.com/",
-          logo_path: "valora.jpg",
+          title: "Contributor - AI for Wind Energy",
+          company: "FruitPunch.ai",
+          company_url:
+            "https://www.fruitpunch.ai/challenges/ai-for-wind-energy",
+          logo_path: "fp.jpg",
           duration: "Oct 2020 - Dec 2022",
-          location: "Surat, Gujarat",
+          location: "Virtual Global Team",
           description: `Train, oversee, and mentor young software development employees. I created and managed the admin panel backend and a gambling application as a Node.js backend developer. I obtained knowledge in Web Socket, Payment Gateway Integration, and gaming legislation, while growing my industry experience and investigating new technologies.
           Focus on change request functions in close collaboration with the project manager and team leads.
           Developed new and maintained existing applications.
@@ -564,7 +652,7 @@ const projectsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "harikrushn.jpg",
+    profile_image_path: "standard_passport_photo.jpg",
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
   },
@@ -581,7 +669,7 @@ const projects = {
   data: [
     {
       id: "0",
-      name: "Keep Calm and Carry On",
+      name: "Waste Segregation using Computer Vision and Robotic arm",
       url: "https://github.com/harikanani/Keep-Calm-and-Carry-On.github.io",
       description:
         "This platform enables users to practice Augmented Reality meditation, play stress burster games, track task completion and engage in motivational exercises to cope with stress and anxiety at work.  ",
