@@ -3,8 +3,8 @@
 // Website related settings
 const settings = {
   isSplash: true, // Change this to true if you want to use the splash screen.
-  useCustomCursor: true, // Change this to false if you want the good'ol cursor
-  googleTrackingID: "UA-174238252-2",
+  useCustomCursor: false, // Change this to false if you want the good'ol cursor
+  googleTrackingID: "G-DV2VQCPZ98",
 };
 
 //Home Page
@@ -15,7 +15,7 @@ const greeting = {
   nickname: "Jayanti",
   full_name: "Jayanti Lahoti",
   subTitle:
-    "MSCS@ University of Caalifornia, San Diego. \n I m looking for summer 2025 tech internships in USA",
+    "MSCS@ University of California, San Diego. \n I m looking for summer 2025 tech internships in USA",
   resumeLink: "https://jayanti-lahoti-resume.tiiny.site/",
   mail: "mailto:jlahoti@ucsd.edu",
 };
@@ -37,9 +37,9 @@ const skills = {
       title: "ML and Computer Vision",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Designing and deploying machine learning models for image classification and object detection",
-        "⚡ Developing computer vision applications using TensorFlow, PyTorch, and OpenCV",
-        "⚡ Implementing end-to-end ML pipelines from data preprocessing to model deployment",
+        "Designing and deploying machine learning models for image classification and object detection",
+        "Developing computer vision applications using TensorFlow, PyTorch, and OpenCV",
+        "Implementing end-to-end ML pipelines from data preprocessing to model deployment",
       ],
       softwareSkills: [
         {
@@ -92,41 +92,6 @@ const skills = {
             color: "#439743",
           },
         },
-        // {
-        //   skillName: "GraphQL",
-        //   fontAwesomeClassname: "simple-icons:graphql",
-        //   style: {
-        //     color: "#DE33A6",
-        //   },
-        // },
-        // {
-        //   skillName: "Android",
-        //   fontAwesomeClassname: "simple-icons:android",
-        //   style: {
-        //     color: "#3DDC84",
-        //   },
-        // },
-        // {
-        //   skillName: "Flutter",
-        //   fontAwesomeClassname: "simple-icons:flutter",
-        //   style: {
-        //     color: "#02569B",
-        //   },
-        // },
-        // {
-        //   skillName: "Dart",
-        //   fontAwesomeClassname: "simple-icons:dart",
-        //   style: {
-        //     color: "#29B0EE",
-        //   },
-        // },
-        // {
-        //   skillName: "Visual Basic",
-        //   fontAwesomeClassname: "simple-icons:dot-net",
-        //   style: {
-        //     color: "#029FCE",
-        //   },
-        // },
         {
           skillName: "MySQL",
           fontAwesomeClassname: "simple-icons:mysql",
@@ -158,12 +123,12 @@ const skills = {
       ],
     },
     {
-      title: "Backend and Frontend Development",
+      title: "Software Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-        "⚡ Building responsive website front end using ReactJS",
-        "⚡ Creating application backend in Node, Express",
+        "Develop highly interactive Front end / User Interfaces for web applications",
+        "Building responsive website front end using ReactJS",
+        "Creating application backend and also experienced as a Cloud Developer",
       ],
       softwareSkills: [
         {
@@ -251,13 +216,6 @@ const skills = {
             color: "#E94E32",
           },
         },
-        // {
-        //   skillName: "C++",
-        //   fontAwesomeClassname: "simple-icons:cplusplus",
-        //   style: {
-        //     color: "#E94E32",
-        //   },
-        // },
         {
           skillName: "Python",
           fontAwesomeClassname: "simple-icons:python",
@@ -265,17 +223,6 @@ const skills = {
             color: "#3776AB",
           },
         },
-      ],
-    },
-    {
-      title: "Cloud Infra-Architecture",
-      fileName: "CloudInfraImg",
-      skills: [
-        "⚡ Experience working as a Cloud Developer",
-        "⚡ Experience hosting and managing websites",
-        "⚡ Experience with Continuous Integration and Continuous Deployment",
-      ],
-      softwareSkills: [
         {
           skillName: "Azure",
           fontAwesomeClassname: "simple-icons:amazonaws",
@@ -297,13 +244,6 @@ const skills = {
             color: "#FFCA28",
           },
         },
-        // {
-        //   skillName: "PostgreSQL",
-        //   fontAwesomeClassname: "simple-icons:postgresql",
-        //   style: {
-        //     color: "#336791",
-        //   },
-        // },
         {
           skillName: "Docker",
           fontAwesomeClassname: "simple-icons:docker",
@@ -339,7 +279,7 @@ const degrees = {
       subtitle: "B.E in Computer Science",
       logo_path: "bmsce.jpg",
       alt_name: "",
-      duration: "2018 - 2021",
+      duration: "2019 - 2023",
       descriptions: [],
       website_link: "https://www.bmsce.ac.in/",
     },
@@ -372,7 +312,7 @@ const certifications = {
       subtitle: "Google Certified",
       logo_path: "tensor.png",
       certificate_link:
-        "https://drive.google.com/file/d/12u_tkvhgB-K2TIm-RDdJOwYbQ9ccqiqA/view?usp=sharing",
+        "https://www.credential.net/0e699cbb-aa46-4cc4-bdfd-bfb922af80e4#acc.On4XwHJW",
       alt_name: "",
       // color_code: "#F6B808",
       color_code: "#47A048",
@@ -381,8 +321,7 @@ const certifications = {
       title: "Scaled Agile Framework (SAFe) 6 Practitioner,",
       subtitle: "",
       logo_path: "safe.png",
-      certificate_link:
-        "https://drive.google.com/file/d/12uAdjQC5LfrB1ODdxqIY181ugyyQhl-I/view?usp=sharing",
+      certificate_link: "",
       alt_name: "Workshop",
       color_code: "",
     },
@@ -390,8 +329,7 @@ const certifications = {
       title: "Amazon ML Summer school 2022",
       subtitle: "Major League Hacking",
       logo_path: "amazonml.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1ws7g2Oepu76vDFir6SvR_emFAMSkB2ZQ/view?usp=sharing",
+      certificate_link: "",
       alt_name: "Google",
       color_code: "#fe0037",
     },
@@ -399,8 +337,7 @@ const certifications = {
       title: "Hacktoberfest",
       subtitle: "Open Source Contribution",
       logo_path: "hackfest.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1JTd8pVlHbP0RVQYtfa4OZgJYGfdiCwM6/view?usp=sharing",
+      certificate_link: "",
       alt_name: "Flutter International Hackathon",
       color_code: "#2AAFED",
     },
@@ -421,7 +358,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "As a Node.js Backend Developer, I have worked with real projects for over two years. I've mostly done projects on my own. I love organizing workshops to share my knowledge with others.",
+    "At HPE, I developed key UI features for Alletra server management, including summary cards, device tables, and firmware updates, enhancing Hybrid Cloud capabilities. I automated inventory management, improving collaboration, and streamlined QA processes with a custom script, enhancing test coverage. Leveraging CI/CD pipelines and VMs, I optimized development and deployment workflows for greater efficiency.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -433,6 +370,16 @@ const experience = {
           company_url: "https://www.hpe.com/",
           logo_path: "hpe.png",
           duration: "Aug 2024 - Present",
+          location: "Bengaluru, India",
+          description: ``,
+          color: "#0071C5",
+        },
+        {
+          title: "Research and Development Intern",
+          company: "Hewlett Packard Enterpse",
+          company_url: "https://www.hpe.com/",
+          logo_path: "hpe.png",
+          duration: "Jan 2024 - July 2024",
           location: "Bengaluru, India",
           description: ``,
           color: "#0071C5",
@@ -484,7 +431,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "pic.jpg",
     description:
-      "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
+      " Feel free to contact me. I will try to get back to you as fast as I can. ",
   },
 };
 
@@ -495,7 +442,7 @@ const projects = {
       name: "Waste Segregation using AI",
       url: "",
       description:
-        "This platform enables users to practice Augmented Reality meditation, play stress burster games, track task completion and engage in motivational exercises to cope with stress and anxiety at work.  ",
+        "Developed a robotic arm system utilizing YOLOv5 and Raspberry Pi for intelligent waste classification and segregation.",
       languages: [{ name: "Python", iconifyClass: "logos-python" }],
       links: [
         {
@@ -505,7 +452,7 @@ const projects = {
         },
         {
           name: "Publication",
-          url: "https://devpost.com/software/keep-calm-and-carry-on",
+          url: "https://peerj.com/articles/cs-1957/",
           iconifyClass: "fluent:window-dev-edit-20-filled",
         },
       ],
