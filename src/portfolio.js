@@ -371,7 +371,8 @@ const experience = {
           logo_path: "hpe.png",
           duration: "Aug 2024 - Present",
           location: "Bengaluru, India",
-          description: ``,
+          description:
+            "Working on cloud-based system software solutions within HPE Hybrid Cloud. Implemented features for server enablement, including summary dashboards, firmware management, and power actions. Contributed to CI/CD pipelines and infrastructure setup for large-scale system deployment and testing.",
           color: "#0071C5",
         },
         {
@@ -381,7 +382,8 @@ const experience = {
           logo_path: "hpe.png",
           duration: "Jan 2024 - July 2024",
           location: "Bengaluru, India",
-          description: ``,
+          description:
+            "Enhanced UI with dynamic data and mock server integrations for scalability testing. Built key components such as device tables and power management actions. Collaborated with QA to develop reusable automation scripts, improving test efficiency and release cycles.",
           color: "#0071C5",
         },
         {
@@ -392,29 +394,28 @@ const experience = {
           logo_path: "fp.jpg",
           duration: "Oct 2020 - Dec 2022",
           location: "Virtual Global Team",
-          description: `
-          `,
+          description:
+            "Contributed to a global challenge applying AI for predictive maintenance in wind turbines. Worked on developing and evaluating ML pipelines using real-world sensor data to detect anomalies and improve fault prediction accuracy.",
           // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
           color: "#0071C5",
         },
       ],
     },
     // {
-    //   title: "Volunteerships",
-    //   experiences: [
+    //   "title": "Volunteerships",
+    //   "experiences": [
     //     {
-    //       title: "Intern",
-    //       company: "Natural Foundation",
-    //       company_url: "",
-    //       logo_path: "",
-    //       duration: "Sep 2020 - sept 2022",
-    //       location: "Work From Home",
-    //       description:
-    //         "",
-    //       color: "#FBBD18",
-    //     },
-    //   ],
-    // },
+    //       "title": "Intern",
+    //       "company": "Natural Foundation",
+    //       "company_url": "",
+    //       "logo_path": "",
+    //       "duration": "Sep 2020 - Sept 2022",
+    //       "location": "Work From Home",
+    //       "description": "",
+    //       "color": "#FBBD18"
+    //     }
+    //   ]
+    // }
   ],
 };
 
@@ -481,6 +482,70 @@ const projects = {
           url:
             "https://docs.google.com/presentation/d/1RWDPntlUe9bdbhnA5zo4xMuQmt8qEPl2BvWUkz4vpQc/edit#slide=id.p",
           iconifyClass: "fluent:window-dev-edit-20-filled",
+        },
+      ],
+    },
+    {
+      id: "",
+      name: "Audio Based Bird Classification",
+      url: "https://github.com/jayantiii/indian-bird-classification",
+      description: "Audio-based classification of Indian bird species.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+      ],
+      links: [
+        {
+          name: "Github",
+          url: "https://github.com/jayantiii/indian-bird-classification",
+          iconifyClass: "ri:github-fill",
+        },
+      ],
+    },
+    {
+      id: "",
+      name: "Q-Maze Learning",
+      url: "https://github.com/jayantiii/Q-learning-maze-251b",
+      description:
+        "Exploration of reinforcement learning techniques in a grid-based maze environment. Implemented Q-learning and experimented with various exploration strategies to optimize agent navigation",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+      ],
+      links: [
+        {
+          name: "Github",
+          url: "https://github.com/jayantiii/Q-learning-maze-251b",
+          iconifyClass: "ri:github-fill",
+        },
+      ],
+    },
+    {
+      id: "",
+      name: "Eye Gaze Tracking",
+      url: "https://github.com/jayantiii/eye_gaze_tracking",
+      description:
+        "Developed an eye movement tracking system capable of detecting gaze directions—up, down, left, right—and blinks using Python, OpenCV, and Dlib.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+      ],
+      links: [
+        {
+          name: "Github",
+          url: "https://github.com/jayantiii/eye_gaze_tracking",
+          iconifyClass: "ri:github-fill",
+        },
+        {
+          name: "Demonstration Video",
+          url: "https://youtu.be/465mp30k1UY",
+          iconifyClass: "ri:youtube-fill",
         },
       ],
     },
