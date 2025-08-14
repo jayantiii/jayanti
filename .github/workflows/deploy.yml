@@ -19,13 +19,8 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-          else
-            npm install
-          fi
-
+        run: npm install --legacy-peer-deps
+      
       - name: Build project
         run: npm run build
 
