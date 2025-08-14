@@ -2,7 +2,7 @@
   "private": true,
   "name": "personal-portfolio",
   "version": "1.0.0",
-  "homepage": "http://jayantiii.github.io",
+  "homepage": "https://jayantilahoti.dev/",
   "scripts": {
     "build": "react-scripts build",
     "predeploy": "npm run build",
