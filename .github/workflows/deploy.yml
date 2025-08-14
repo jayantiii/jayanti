@@ -1,16 +1,16 @@
-name: Build and Deploy to GitHub Pages
+name: Build and Deploy to User Site
 
 on:
   push:
     branches:
-      - main
+      - main  # or whatever your portfolio repo's main branch is
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout portfolio repo
         uses: actions/checkout@v3
 
       - name: Set up Node.js
@@ -20,13 +20,18 @@ jobs:
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
-      
+
       - name: Build project
         run: CI=false npm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          publish_branch: gh-pages
+      - name: Deploy build to jayantiii.github.io
+        run: |
+          cd build
+          git init
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git remote add origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/jayantiii/jayantiii.github.io.git
+          git checkout -b main
+          git add .
+          git commit -m "Deploy from portfolio repo"
+          git push -f origin main
