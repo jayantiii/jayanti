@@ -4,7 +4,6 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting, contactPageData } from "../../portfolio";
 import { Fade } from "react-reveal";
 import { useHistory } from "react-router-dom";
-import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
 
 const ContactData = contactPageData.contactSection;
