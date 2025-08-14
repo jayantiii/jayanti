@@ -14,8 +14,10 @@ const greeting = {
   logo_name: "Jayanti Lahoti",
   nickname: "Jayanti",
   full_name: "Jayanti Lahoti",
-  subTitle:
-    "MSCS@ University of California, San Diego. \n I m looking for summer 2025 tech internships in USA",
+  subTitle: `MSCS @ UC San Diego
+  
+Software Engineer with experience in cloud systems and Machine Learning.
+Seeking 2026 New Grad Software Engineering and AI roles.`,
   resumeLink: "https://jayanti-lahoti-resume.tiiny.site/",
   mail: "mailto:jlahoti@ucsd.edu",
 };
@@ -271,8 +273,21 @@ const degrees = {
       logo_path: "ucsd.png",
       alt_name: "UCSD",
       duration: "Sept 2024 - Current",
-      descriptions: [],
+      descriptions: [
+        "Specializing in Artificial Intelligence with coursework in Software, Deep Learning, and Embedded Systems.",
+      ],
       website_link: "https://ucsd.edu/",
+    },
+    {
+      title: "University of Southern Denamark",
+      subtitle: "Elite Robotics and Entreprenuership Summer Program",
+      logo_path: "sdu.png",
+      alt_name: "",
+      duration: "Aug 2025 - Aug 2025",
+      descriptions: [
+        "Participated in a fully funded specialized program focusing on robotics Innovation in Denmark.",
+      ],
+      website_link: "https://robotelite.sdu.dk/program/",
     },
     {
       title: "BMS College Of Engineering",
@@ -280,7 +295,9 @@ const degrees = {
       logo_path: "bmsce.jpg",
       alt_name: "",
       duration: "2019 - 2023",
-      descriptions: [],
+      descriptions: [
+        "Bachelors in Computer Science Engineering with a focus on Machine Learning and Software Development.",
+      ],
       website_link: "https://www.bmsce.ac.in/",
     },
   ],
@@ -288,6 +305,16 @@ const degrees = {
 
 const certifications = {
   certifications: [
+    {
+      title: "Google Cloud Platform Professional Machine Learning Engineer",
+      subtitle: "Google Cloud Certified",
+      logo_path: "gc.png",
+      certificate_link:
+        "https://www.credly.com/badges/f5308ef0-09c2-4e5d-9780-3944193bf319",
+      alt_name: "",
+      // color_code: "#2AAFED",
+      color_code: "#47A048",
+    },
     {
       title: "Azure AI Fundamentals",
       subtitle: "Microsoft Certified",
@@ -365,11 +392,21 @@ const experience = {
       title: "Work Experience",
       experiences: [
         {
+          title: "Perception researcher",
+          company: "Autonomous Vehicle Lab @ UCSD",
+          company_url: "https://avl.ucsd.edu/?page_id=83",
+          logo_path: "avl.jpeg",
+          duration: " 2024 - Present",
+          location: "San diego, California",
+          description: "",
+          color: "#0071C5",
+        },
+        {
           title: "System Software Engineer / Cloud Developer",
           company: "Hewlett Packard Enterpse",
           company_url: "https://www.hpe.com/",
           logo_path: "hpe.png",
-          duration: "Aug 2024 - Present",
+          duration: "Aug 2023 - Aug 2024",
           location: "Bengaluru, India",
           description:
             "Working on cloud-based system software solutions within HPE Hybrid Cloud. Implemented features for server enablement, including summary dashboards, firmware management, and power actions. Contributed to CI/CD pipelines and infrastructure setup for large-scale system deployment and testing.",
@@ -380,10 +417,26 @@ const experience = {
           company: "Hewlett Packard Enterpse",
           company_url: "https://www.hpe.com/",
           logo_path: "hpe.png",
-          duration: "Jan 2024 - July 2024",
+          duration: "Jan 2023 - July 2023",
           location: "Bengaluru, India",
           description:
             "Enhanced UI with dynamic data and mock server integrations for scalability testing. Built key components such as device tables and power management actions. Collaborated with QA to develop reusable automation scripts, improving test efficiency and release cycles.",
+          color: "#0071C5",
+        },
+      ],
+    },
+    {
+      title: "Other Experiences",
+      experiences: [
+        {
+          title: "Segmenation and Pose estimation in Collaboration with LEGO",
+          company: "The LEGO Group",
+          company_url: "https://www.lego.com/",
+          logo_path: "lego.png",
+          duration: "August 2025",
+          location: "Denmark",
+          description:
+            "Developed a computer vision system in collaboration with the LEGO Group to accurately segment and estimate the 6D pose of LEGO elements, enhancing automation in the LEGO manufacturing process.",
           color: "#0071C5",
         },
         {
@@ -392,7 +445,7 @@ const experience = {
           company_url:
             "https://www.fruitpunch.ai/challenges/ai-for-wind-energy",
           logo_path: "fp.jpg",
-          duration: "Oct 2020 - Dec 2022",
+          duration: "Oct 2020 - Feb 2022",
           location: "Virtual Global Team",
           description:
             "Contributed to a global challenge applying AI for predictive maintenance in wind turbines. Worked on developing and evaluating ML pipelines using real-world sensor data to detect anomalies and improve fault prediction accuracy.",
@@ -401,21 +454,6 @@ const experience = {
         },
       ],
     },
-    // {
-    //   "title": "Volunteerships",
-    //   "experiences": [
-    //     {
-    //       "title": "Intern",
-    //       "company": "Natural Foundation",
-    //       "company_url": "",
-    //       "logo_path": "",
-    //       "duration": "Sep 2020 - Sept 2022",
-    //       "location": "Work From Home",
-    //       "description": "",
-    //       "color": "#FBBD18"
-    //     }
-    //   ]
-    // }
   ],
 };
 
@@ -439,6 +477,32 @@ const contactPageData = {
 const projects = {
   data: [
     {
+      id: "",
+      name: "Tryton - Underwater Drone",
+      url:
+        "https://docs.google.com/presentation/d/14_-eYM9vmjBHniISU-A5tNljjWPsXSRbGckBbMMk77k/",
+      description:
+        "Built Tryton, a fully 3D-printed underwater ROV integrating ArduPilot, QGroundControl, and Raspberry Pi for subaquatic exploration.",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+      ],
+      links: [
+        {
+          name: "Github",
+          url: "",
+          iconifyClass: "ri:github-fill",
+        },
+        {
+          name: "Demonstration Video",
+          url: "",
+          iconifyClass: "ri:youtube-fill",
+        },
+      ],
+    },
+    {
       id: "0",
       name: "Waste Segregation using AI",
       url: "",
@@ -460,11 +524,11 @@ const projects = {
     },
     {
       id: "",
-      name: "Autonomous Deliverables in a Learning Environment",
+      name: "Autonomous IoT Projects",
       url:
         "https://docs.google.com/presentation/d/1RWDPntlUe9bdbhnA5zo4xMuQmt8qEPl2BvWUkz4vpQc/edit#slide=id.p",
       description:
-        "Implementation of Multimodal Architecture for Autonomous Deliverables in a Learning Environment. Waste Management - using Drone.Attendance System & Efficient Electricity usage - using RFID. Internal waste management - using Ultrasonic MC.",
+        "Implementation of waste Management using tello Drone. Attendance System & Efficient Electricity usage using RFID. Smart Bins system with Ultrasonic sensors.",
       languages: [
         {
           name: "Python",
@@ -487,9 +551,30 @@ const projects = {
     },
     {
       id: "",
+      name: "HackConnect",
+      url: "",
+      description:
+        "Developed a university-based platform for connecting students to collaborate on hackathons and side projects using Next.js and TypeScript.",
+      languages: [
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+      ],
+      links: [
+        {
+          name: "Github",
+          url: "https://github.com/jayantiii/HackConnect",
+          iconifyClass: "ri:github-fill",
+        },
+      ],
+    },
+    {
+      id: "",
       name: "Audio Based Bird Classification",
       url: "https://github.com/jayantiii/indian-bird-classification",
-      description: "Audio-based classification of Indian bird species.",
+      description:
+        "Scraped and curated a custom dataset of 5000+ Indian bird audio samples, preprocessed the signals, and trained an CNN model with transfer learning.",
       languages: [
         {
           name: "Python",
@@ -506,10 +591,10 @@ const projects = {
     },
     {
       id: "",
-      name: "Q-Maze Learning",
+      name: "RL in Grid-based Maze",
       url: "https://github.com/jayantiii/Q-learning-maze-251b",
       description:
-        "Exploration of reinforcement learning techniques in a grid-based maze environment. Implemented Q-learning and experimented with various exploration strategies to optimize agent navigation",
+        "Implemented Q-learning with various exploration strategies to optimize agent navigation",
       languages: [
         {
           name: "Python",
