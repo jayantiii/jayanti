@@ -39,9 +39,11 @@ const skills = {
       title: "ML and Computer Vision",
       fileName: "FullStackImg",
       skills: [
-        "Designing and deploying machine learning models for image classification and object detection",
-        "Developing computer vision applications using TensorFlow, PyTorch, and OpenCV",
-        "Implementing end-to-end ML pipelines from data preprocessing to model deployment",
+        "Designing and deploying machine learning models across diverse domains, including vision, NLP, and structured data.",
+
+        "Building intelligent applications that apply deep learning and computer vision to solve real-world challenges.",
+
+        "Implementing complete ML pipelines, from data collection and preprocessing to training, evaluation, and deployment.",
       ],
       softwareSkills: [
         {
@@ -123,22 +125,8 @@ const skills = {
           },
         },
         {
-          skillName: "MySQL",
-          fontAwesomeClassname: "simple-icons:mysql",
-          style: {
-            color: "#4479A1",
-          },
-        },
-        {
           skillName: "Git",
           fontAwesomeClassname: "simple-icons:git",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "C",
-          fontAwesomeClassname: "simple-icons:c",
           style: {
             color: "#E94E32",
           },
@@ -205,9 +193,9 @@ const skills = {
       title: "Software Development",
       fileName: "FullStackImg",
       skills: [
-        "Develop highly interactive Front end / User Interfaces for web applications",
-        "Building responsive website front end using ReactJS",
-        "Creating application backend and also experienced as a Cloud Developer",
+        "Developing responsive and engaging front-end applications.",
+        "Engineering secure and scalable back-end services",
+        "Designing and managing databases, and deploying applications on cloud platforms.",
       ],
       softwareSkills: [
         {
@@ -374,27 +362,13 @@ const skills = {
             color: "#009639",
           },
         },
-        {
-          skillName: "GraphQL",
-          fontAwesomeClassname: "simple-icons:graphql",
-          style: {
-            color: "#E10098",
-          },
-        },
-        {
-          skillName: "REST APIs",
-          fontAwesomeClassname: "fa-solid:server", // concept, no brand
-          style: {
-            color: "#4A4A4A",
-          },
-        },
-        {
-          skillName: "CI/CD",
-          fontAwesomeClassname: "fa-solid:code-branch", // generic DevOps
-          style: {
-            color: "#F05032",
-          },
-        },
+        // {
+        //   skillName: "GraphQL",
+        //   fontAwesomeClassname: "simple-icons:graphql",
+        //   style: {
+        //     color: "#E10098",
+        //   },
+        // },
       ],
     },
   ],

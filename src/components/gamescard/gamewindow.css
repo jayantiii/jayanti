@@ -1,0 +1,46 @@
+.game-window {
+  width: 40%;
+  min-height: 400px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 12px;
+}
+
+.game-tabs button {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.game-tabs button.active {
+  background: #0078ff;
+  color: white;
+  font-weight: bold;
+}
+
+.game-tabs button:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.game-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

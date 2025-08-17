@@ -5,6 +5,8 @@ import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
+import RobotSimulator from "../../components/gamescard/robotsim/robotsim";
+
 // import DesignImg from "./DesignImg";
 
 function GetSkillSvg(props) {
@@ -24,7 +26,7 @@ function SkillSection(props) {
           return (
             <div className="skills-main-div">
               <Fade left duration={2000}>
-                <div className="skills-image-div">
+                <div className="skills-image-div-1">
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
                 </div>
               </Fade>
@@ -82,9 +84,12 @@ function SkillSection(props) {
                   </div>
                 </Fade>
               </div>
-              <Fade right duration={2000}>
-                <div className="skills-image-div">
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
+
+              {/* TODO change here FOR GAMES */}
+              <Fade left duration={2000}>
+                <div className="skills-image-div-2">
+                  {/* Replace image with your robot simulator */}
+                  <RobotSimulator />
                 </div>
               </Fade>
             </div>
