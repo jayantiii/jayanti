@@ -289,13 +289,6 @@ const skills = {
           },
         },
         {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:amazonaws",
-          style: {
-            color: "#FF9900",
-          },
-        },
-        {
           skillName: "Jenkins",
           fontAwesomeClassname: "simple-icons:jenkins",
           style: {
@@ -421,13 +414,13 @@ const degrees = {
       website_link: "https://ucsd.edu/",
     },
     {
-      title: "University of Southern Denamark",
+      title: "University of Southern Denmark",
       subtitle: "Elite Robotics and Entreprenuership Summer Program",
       logo_path: "sdu.png",
       alt_name: "",
       duration: "Aug 2025 - Aug 2025",
       descriptions: [
-        "Participated in a fully funded specialized program focusing on robotics Innovation in Denmark.",
+        "Participated in a fully funded specialized program focusing on robotics Innovation in Odense, Denmark.",
       ],
       website_link: "https://robotelite.sdu.dk/program/",
     },
@@ -612,7 +605,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "pic.jpg",
     description:
-      " Feel free to contact me. I will try to get back to you as fast as I can. ",
+      "Happy to connect! Lets talk code, research, or even random curiosities.",
   },
 };
 
