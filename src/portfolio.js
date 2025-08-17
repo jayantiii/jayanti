@@ -448,7 +448,7 @@ const certifications = {
         "https://www.credly.com/badges/f5308ef0-09c2-4e5d-9780-3944193bf319",
       alt_name: "",
       // color_code: "#2AAFED",
-      color_code: "#47A048",
+      color_code: "",
     },
     {
       title: "Azure AI Fundamentals",
@@ -458,16 +458,16 @@ const certifications = {
         "https://www.credly.com/badges/e062f0fb-85b6-47f4-9086-b8609e70ad0f/public_url",
       alt_name: "",
       // color_code: "#2AAFED",
-      color_code: "#47A048",
+      color_code: "",
     },
     {
       title: "Intermediate Machine Learning",
-      subtitle: "Hack The Mountains",
+      subtitle: "Kaggle",
       logo_path: "kaggle.png",
       certificate_link:
         "https://www.kaggle.com/learn/certification/jayantii/intermediate-machine-learning",
       alt_name: "",
-      color_code: "#E2405F",
+      color_code: "",
     },
     {
       title: "Tensorflow Developer",
@@ -477,11 +477,11 @@ const certifications = {
         "https://www.credential.net/0e699cbb-aa46-4cc4-bdfd-bfb922af80e4#acc.On4XwHJW",
       alt_name: "",
       // color_code: "#F6B808",
-      color_code: "#47A048",
+      color_code: "",
     },
     {
-      title: "Scaled Agile Framework (SAFe) 6 Practitioner,",
-      subtitle: "",
+      title: "Scaled Agile Framework (SAFe) 6 Practitioner",
+      subtitle: "Certtification Sponsored by HPE",
       logo_path: "safe.png",
       certificate_link: "",
       alt_name: "Workshop",
@@ -489,19 +489,19 @@ const certifications = {
     },
     {
       title: "Amazon ML Summer school 2022",
-      subtitle: "Major League Hacking",
+      subtitle: "Selected out of 1000+ applicants",
       logo_path: "amazonml.png",
       certificate_link: "",
       alt_name: "Google",
-      color_code: "#fe0037",
+      color_code: "",
     },
     {
       title: "Hacktoberfest",
       subtitle: "Open Source Contribution",
       logo_path: "hackfest.png",
       certificate_link: "",
-      alt_name: "Flutter International Hackathon",
-      color_code: "#2AAFED",
+      alt_name: "",
+      color_code: "",
     },
     // color_code: "#8C151599",
     // color_code: "#7A7A7A",
@@ -605,7 +605,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "pic.jpg",
     description:
-      "Happy to connect! Lets talk code, research, or even random curiosities.",
+      "Happy to connect! Lets talk code, research, or just exploring curious ideas.",
   },
 };
 
