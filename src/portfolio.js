@@ -45,6 +45,13 @@ const skills = {
       ],
       softwareSkills: [
         {
+          skillName: "Python",
+          fontAwesomeClassname: "fa-brands:python",
+          style: {
+            color: "#3776AB", // Python's official blue
+          },
+        },
+        {
           skillName: "OpenCV",
           fontAwesomeClassname: "simple-icons:opencv",
           style: {
@@ -67,31 +74,52 @@ const skills = {
           },
         },
         {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
+          skillName: "PyTorch",
+          fontAwesomeClassname: "simple-icons:pytorch",
           style: {
-            color: "#61DAFB",
+            color: "#EE4C2C",
           },
         },
         {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          skillName: "Keras",
+          fontAwesomeClassname: "simple-icons:keras",
           style: {
-            color: "#339933",
+            color: "#D00000",
           },
         },
         {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
+          skillName: "ONNX",
+          fontAwesomeClassname: "simple-icons:onnx",
           style: {
-            color: "#CB3837",
+            color: "#005CED",
           },
         },
         {
-          skillName: "Python",
-          fontAwesomeClassname: "simple-icons:Python",
+          skillName: "CUDA",
+          fontAwesomeClassname: "simple-icons:nvidia",
           style: {
-            color: "#439743",
+            color: "#76B900",
+          },
+        },
+        {
+          skillName: "Matplotlib",
+          fontAwesomeClassname: "simple-icons:matplotlib",
+          style: {
+            color: "#11557C",
+          },
+        },
+        {
+          skillName: "NumPy",
+          fontAwesomeClassname: "simple-icons:numpy",
+          style: {
+            color: "#013243",
+          },
+        },
+        {
+          skillName: "Pandas",
+          fontAwesomeClassname: "simple-icons:pandas",
+          style: {
+            color: "#150458",
           },
         },
         {
@@ -116,10 +144,59 @@ const skills = {
           },
         },
         {
-          skillName: "Python",
-          fontAwesomeClassname: "simple-icons:python",
+          skillName: "Hugging Face",
+          fontAwesomeClassname: "simple-icons:huggingface",
           style: {
-            color: "#3776AB",
+            color: "#FFB000",
+          },
+        },
+        {
+          skillName: "LangChain",
+          fontAwesomeClassname: "simple-icons:python", // no official icon
+          style: {
+            color: "#0E76A8",
+          },
+        },
+        {
+          skillName: "OpenAI",
+          fontAwesomeClassname: "simple-icons:openai",
+          style: {
+            color: "#412991",
+          },
+        },
+        {
+          skillName: "LLaMA",
+          fontAwesomeClassname: "simple-icons:meta", // Meta AI
+          style: {
+            color: "#0466C8",
+          },
+        },
+        {
+          skillName: "RAG (Retrieval-Augmented Generation)",
+          fontAwesomeClassname: "simple-icons:elastic", // often paired with vector DBs
+          style: {
+            color: "#005571",
+          },
+        },
+        {
+          skillName: "FastAPI",
+          fontAwesomeClassname: "simple-icons:fastapi",
+          style: {
+            color: "#009688",
+          },
+        },
+        {
+          skillName: "Vector Databases",
+          fontAwesomeClassname: "fa-solid:database", // fallback since Pinecone/Weaviate not in FA
+          style: {
+            color: "#0A9396",
+          },
+        },
+        {
+          skillName: "GCP AI Platform",
+          fontAwesomeClassname: "simple-icons:googlecloud",
+          style: {
+            color: "#4285F4",
           },
         },
       ],
@@ -170,8 +247,15 @@ const skills = {
           },
         },
         {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          skillName: "Python",
+          fontAwesomeClassname: "fa-brands:python",
+          style: {
+            color: "#3776AB", // Python's official blue
+          },
+        },
+        {
+          skillName: "Node.js",
+          fontAwesomeClassname: "fa-brands:node-js",
           style: {
             color: "#339933",
           },
@@ -184,24 +268,10 @@ const skills = {
           },
         },
         {
-          skillName: "Python",
-          fontAwesomeClassname: "simple-icons:Python",
-          style: {
-            color: "#439743",
-          },
-        },
-        {
           skillName: "MySQL",
           fontAwesomeClassname: "simple-icons:mysql",
           style: {
             color: "#4479A1",
-          },
-        },
-        {
-          skillName: "Wordpress",
-          fontAwesomeClassname: "simple-icons:wordpress",
-          style: {
-            color: "#207297",
           },
         },
         {
@@ -219,13 +289,6 @@ const skills = {
           },
         },
         {
-          skillName: "Python",
-          fontAwesomeClassname: "simple-icons:python",
-          style: {
-            color: "#3776AB",
-          },
-        },
-        {
           skillName: "Azure",
           fontAwesomeClassname: "simple-icons:amazonaws",
           style: {
@@ -239,6 +302,14 @@ const skills = {
             color: "#6863A6",
           },
         },
+        {
+          skillName: "GCP AI Platform",
+          fontAwesomeClassname: "simple-icons:googlecloud",
+          style: {
+            color: "#4285F4",
+          },
+        },
+
         {
           skillName: "Firebase",
           fontAwesomeClassname: "simple-icons:firebase",
@@ -258,6 +329,77 @@ const skills = {
           fontAwesomeClassname: "simple-icons:githubactions",
           style: {
             color: "#5b77ef",
+          },
+        },
+        {
+          skillName: "Kubernetes",
+          fontAwesomeClassname: "simple-icons:kubernetes",
+          style: {
+            color: "#326CE5",
+          },
+        },
+        {
+          skillName: "Microsoft Azure",
+          fontAwesomeClassname: "simple-icons:microsoftazure",
+          style: {
+            color: "#0089D6",
+          },
+        },
+        {
+          skillName: "Linux",
+          fontAwesomeClassname: "simple-icons:linux",
+          style: {
+            color: "#FCC624",
+          },
+        },
+        {
+          skillName: "Bash",
+          fontAwesomeClassname: "simple-icons:gnubash",
+          style: {
+            color: "#4EAA25",
+          },
+        },
+        {
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "simple-icons:postgresql",
+          style: {
+            color: "#336791",
+          },
+        },
+
+        {
+          skillName: "Apache Kafka",
+          fontAwesomeClassname: "simple-icons:apachekafka",
+          style: {
+            color: "#231F20",
+          },
+        },
+        {
+          skillName: "NGINX",
+          fontAwesomeClassname: "simple-icons:nginx",
+          style: {
+            color: "#009639",
+          },
+        },
+        {
+          skillName: "GraphQL",
+          fontAwesomeClassname: "simple-icons:graphql",
+          style: {
+            color: "#E10098",
+          },
+        },
+        {
+          skillName: "REST APIs",
+          fontAwesomeClassname: "fa-solid:server", // concept, no brand
+          style: {
+            color: "#4A4A4A",
+          },
+        },
+        {
+          skillName: "CI/CD",
+          fontAwesomeClassname: "fa-solid:code-branch", // generic DevOps
+          style: {
+            color: "#F05032",
           },
         },
       ],
@@ -501,6 +643,8 @@ const projects = {
           iconifyClass: "ri:youtube-fill",
         },
       ],
+      images: ["lego.png", "gc.png"],
+      // video: "/videos/tryton-demo.mp4" // optional
     },
     {
       id: "0",
