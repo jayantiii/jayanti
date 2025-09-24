@@ -3,21 +3,11 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting, contactPageData } from "../../portfolio";
 import { Fade } from "react-reveal";
-import { useHistory } from "react-router-dom";
-import { style } from "glamor";
 
 const ContactData = contactPageData.contactSection;
 
 export default function Greeting(props) {
   const theme = props.theme;
-  const history = useHistory();
-
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
 
   return (
     <Fade bottom duration={2000} distance="40px">
@@ -38,15 +28,20 @@ export default function Greeting(props) {
               </p>
               <SocialMedia />
               <div className="portfolio-repo-btn-div">
-                <button
-                  {...styles}
-                  className="button"
-                  onClick={() => {
-                    history.push("/contact");
+                <a
+                  href={greeting.resumeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button resume-button"
+                  style={{
+                    backgroundColor: theme.accentColor,
+                    color: theme.text,
+                    textDecoration: "none",
+                    display: "inline-block",
                   }}
                 >
-                  Contact Me
-                </button>
+                  View Resume
+                </a>
               </div>
             </div>
           </div>
