@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
@@ -9,6 +9,16 @@ import { style } from "glamor";
 
 function Projects(props) {
   const theme = props.theme;
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const categories = ["All", "Full-Stack", "ML & AI", "IoT & Embedded"];
+
+  const filteredProjects =
+    selectedCategory === "All"
+      ? projects.data
+      : projects.data.filter(
+          (project) => project.category === selectedCategory
+        );
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
@@ -17,35 +27,60 @@ function Projects(props) {
     },
   });
 
+  const filterButtonStyles = style({
+    backgroundColor: theme.accentBright,
+    color: theme.text,
+    border: `2px solid ${theme.accentBright}`,
+    padding: "10px 20px",
+    margin: "5px",
+    borderRadius: "25px",
+    cursor: "pointer",
+    transition: "all 0.3s ease",
+    ":hover": {
+      backgroundColor: "transparent",
+      color: theme.accentBright,
+    },
+  });
+
+  const activeFilterButtonStyles = style({
+    backgroundColor: "transparent",
+    color: theme.accentBright,
+    border: `2px solid ${theme.accentBright}`,
+    padding: "10px 20px",
+    margin: "5px",
+    borderRadius: "25px",
+    cursor: "pointer",
+    transition: "all 0.3s ease",
+  });
+
   return (
     <div className="projects-main">
       <Header theme={theme} setTheme={props.setTheme} />
-      <div className="basic-projects">
-        <Fade bottom duration={2000} distance="40px">
-          {/* <div className="projects-heading-div">
-            <div className="projects-heading-img-div">
-              <ProjectsImg theme={theme} />
-            </div>
-            <div className="projects-heading-text-div">
-              <h1
-                className="projects-heading-text"
-                style={{ color: theme.text }}
-              >
-                {projectsHeader.title}
-              </h1>
-              <p
-                className="projects-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {projectsHeader["description"]}
-              </p>
-            </div>
-          </div> */}
-        </Fade>
-      </div>
+
+      {/* Filter Buttons */}
+      <Fade bottom duration={2000} distance="40px">
+        <div
+          className="filter-buttons-container"
+          style={{ textAlign: "center", marginBottom: "30px" }}
+        >
+          {categories.map((category) => (
+            <button
+              key={category}
+              {...(selectedCategory === category
+                ? activeFilterButtonStyles
+                : filterButtonStyles)}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+      </Fade>
       <div className="repo-cards-div-main">
-        {projects.data.map((repo) => {
-          return <ProjectCard repo={repo} theme={theme} />;
+        {filteredProjects.map((repo, index) => {
+          return (
+            <ProjectCard repo={repo} theme={theme} key={repo.id || index} />
+          );
         })}
       </div>
       <br />

@@ -592,6 +592,7 @@ const projects = {
         "https://docs.google.com/presentation/d/14_-eYM9vmjBHniISU-A5tNljjWPsXSRbGckBbMMk77k/",
       description:
         "Built Tryton, a fully 3D-printed underwater ROV integrating ArduPilot, QGroundControl, and Raspberry Pi for subaquatic exploration.",
+      category: "IoT & Embedded",
       languages: [
         {
           name: "Python",
@@ -619,6 +620,7 @@ const projects = {
       url: "",
       description:
         "Developed a robotic arm system utilizing YOLOv5 and Raspberry Pi for intelligent waste classification and segregation.",
+      category: "ML & AI",
       languages: [{ name: "Python", iconifyClass: "logos-python" }],
       links: [
         {
@@ -640,6 +642,7 @@ const projects = {
         "https://docs.google.com/presentation/d/1RWDPntlUe9bdbhnA5zo4xMuQmt8qEPl2BvWUkz4vpQc/edit#slide=id.p",
       description:
         "Implementation of waste Management using tello Drone. Attendance System & Efficient Electricity usage using RFID. Smart Bins system with Ultrasonic sensors.",
+      category: "IoT & Embedded",
       languages: [
         {
           name: "Python",
@@ -666,6 +669,7 @@ const projects = {
       url: "",
       description:
         "Developed a university-based platform for connecting students to collaborate on hackathons and side projects using Next.js and TypeScript.",
+      category: "Full-Stack",
       languages: [
         {
           name: "React",
@@ -686,6 +690,7 @@ const projects = {
       url: "https://github.com/jayantiii/indian-bird-classification",
       description:
         "Scraped and curated a custom dataset of 5000+ Indian bird audio samples, preprocessed the signals, and trained an CNN model with transfer learning.",
+      category: "ML & AI",
       languages: [
         {
           name: "Python",
@@ -706,6 +711,7 @@ const projects = {
       url: "https://github.com/jayantiii/Q-learning-maze-251b",
       description:
         "Implemented Q-learning with various exploration strategies to optimize agent navigation",
+      category: "ML & AI",
       languages: [
         {
           name: "Python",
@@ -726,6 +732,7 @@ const projects = {
       url: "https://github.com/jayantiii/eye_gaze_tracking",
       description:
         "Developed an eye movement tracking system capable of detecting gaze directions—up, down, left, right—and blinks using Python, OpenCV, and Dlib.",
+      category: "ML & AI",
       languages: [
         {
           name: "Python",

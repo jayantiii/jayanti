@@ -64,6 +64,30 @@
   margin-top: 60px;
 }
 
+/* Filter Buttons Styles */
+.filter-buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filter-buttons-container button {
+  font-family: "Google Sans Regular";
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.filter-buttons-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 1380px) {
   .projects-heading-text {
     font-size: 50px;
@@ -101,5 +125,15 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 30px;
+  }
+
+  .filter-buttons-container {
+    margin: 10px 0;
+  }
+
+  .filter-buttons-container button {
+    font-size: 14px;
+    min-width: 100px;
+    padding: 8px 16px;
   }
 }
