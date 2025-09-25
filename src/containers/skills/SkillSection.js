@@ -86,7 +86,7 @@ function SkillSection(props) {
               </div>
 
               {/* TODO change here FOR GAMES */}
-              <Fade left duration={2000}>
+              <Fade right duration={2000}>
                 <div className="skills-image-div-2">
                   {/* Replace image with your robot simulator */}
                   <RobotSimulator />

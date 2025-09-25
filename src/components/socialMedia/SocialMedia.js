@@ -33,12 +33,36 @@ export default function socialMedia() {
         <span></span>
       </a>
       <a
-        href={`mailto:${socialMediaLinks.gmail}`}
+        href="mailto:jlahoti@ucsd.edu"
         className="icon-button google"
-        target="_blank"
-        rel="noopener noreferrer"
+        title="Send email to jlahoti@ucsd.edu"
+        onClick={(e) => {
+          e.preventDefault();
+          // Show options to user
+          const choice = window.confirm(
+            "Choose email option:\n\nOK = Copy email to clipboard\nCancel = Open Gmail in browser"
+          );
+
+          if (choice) {
+            // Copy to clipboard
+            navigator.clipboard
+              .writeText("jlahoti@ucsd.edu")
+              .then(() => {
+                alert("Email copied to clipboard: jlahoti@ucsd.edu");
+              })
+              .catch(() => {
+                alert("Email: jlahoti@ucsd.edu");
+              });
+          } else {
+            // Open Gmail
+            window.open(
+              "https://mail.google.com/mail/?view=cm&fs=1&to=jlahoti@ucsd.edu&su=Hello from Portfolio&body=Hi Jayanti,",
+              "_blank"
+            );
+          }
+        }}
       >
-        <i className="fab fa-google"></i>
+        <i className="fas fa-envelope"></i>
         <span></span>
       </a>
     </div>

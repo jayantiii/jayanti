@@ -18,7 +18,7 @@ const greeting = {
   
 Software Engineer with experience in cloud systems and Machine Learning.
 Seeking 2026 New Grad Software Engineering and AI roles.`,
-  resumeLink: "https://jayanti-lahoti-resume.tiiny.site/",
+  resumeLink: "/resume/software eng_jayanti.pdf",
   mail: "mailto:jlahoti@ucsd.edu",
 };
 
@@ -632,6 +632,26 @@ const projects = {
           name: "Publication",
           url: "https://peerj.com/articles/cs-1957/",
           iconifyClass: "fluent:window-dev-edit-20-filled",
+        },
+      ],
+    },
+    {
+      id: "",
+      name: "Focus the unfocus extension",
+      url: "",
+      description:
+        "A productivity Chrome extension that blocks distracting websites and shows interesting science, technology, and mystery articles instead. Stay focused for 20 minutes to earn a 5-minute break!",
+      category: "Full-Stack",
+      languages: [
+        { name: "JavaScript", iconifyClass: "logos-javascript" },
+        { name: "Chrome Extension", iconifyClass: "simple-icons:googlechrome" },
+      ],
+      links: [
+        {
+          name: "Github",
+          url:
+            "https://github.com/jayantiii/blockwebappswithbrainystuff.extension",
+          iconifyClass: "ri:github-fill",
         },
       ],
     },
