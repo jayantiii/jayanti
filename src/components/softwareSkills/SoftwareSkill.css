@@ -12,6 +12,7 @@
   margin-right: 20px;
   margin-bottom: 20px;
   font-family: "Google Sans Regular";
+  position: relative;
 }
 
 .software-skill-inline > i {

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import ProjectLinks from "../ProjectLinks/ProjectLinks";
 import "./ProjectCard.css";
-import { Fade } from "react-reveal";
 import { style } from "glamor";
 import Slider from "react-slick";
 
@@ -34,67 +33,63 @@ export default function ProjectCard({ repo, theme }) {
   };
 
   return (
-    <div>
-      <Fade bottom duration={2000} distance="40px">
-        <div
-          {...styles}
-          style={{ backgroundColor: theme.projectCard }}
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-        >
-          {/* Hover Overlay */}
-          {hovered && (
-            <div className="hover-overlay">
-              {repo.images && repo.images.length > 0 && (
-                <Slider {...sliderSettings}>
-                  {repo.images.map((imgName, idx) => (
-                    <img
-                      key={idx}
-                      src={require(`../../assests/images/${imgName}`)}
-                      alt={`${repo.name} screenshot`}
-                      style={{
-                        maxWidth: "100%",
-                        maxHeight: "100%",
-                        objectFit: "contain",
-                        borderRadius: "6px",
-                      }}
-                    />
-                  ))}
-                </Slider>
-              )}
-
-              {repo.video && (
-                <video
-                  src={repo.video}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="video-preview"
+    <div
+      {...styles}
+      style={{ backgroundColor: theme.projectCard }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      {/* Hover Overlay */}
+      {hovered && (
+        <div className="hover-overlay">
+          {repo.images && repo.images.length > 0 && (
+            <Slider {...sliderSettings}>
+              {repo.images.map((imgName, idx) => (
+                <img
+                  key={idx}
+                  src={require(`../../assests/images/${imgName}`)}
+                  alt={`${repo.name} screenshot`}
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    objectFit: "contain",
+                    borderRadius: "6px",
+                  }}
                 />
-              )}
-            </div>
+              ))}
+            </Slider>
           )}
 
-          {/* Your existing content */}
-          <div className="repo-name-div">
-            <p className="repo-name" style={{ color: theme.text }}>
-              {repo.name}
-            </p>
-          </div>
-          <p className="repo-description" style={{ color: theme.text }}>
-            {repo.description}
-          </p>
-          <div className="flexDiv">
-            <div className="repo-details Leftitem">
-              <ProjectLanguages logos={repo.languages} />
-            </div>
-            <div className="repo-details Rightitem">
-              <ProjectLinks logos={repo.links} />
-            </div>
-          </div>
+          {repo.video && (
+            <video
+              src={repo.video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="video-preview"
+            />
+          )}
         </div>
-      </Fade>
+      )}
+
+      {/* Your existing content */}
+      <div className="repo-name-div">
+        <p className="repo-name" style={{ color: theme.text }}>
+          {repo.name}
+        </p>
+      </div>
+      <p className="repo-description" style={{ color: theme.text }}>
+        {repo.description}
+      </p>
+      <div className="flexDiv">
+        <div className="repo-details Leftitem">
+          <ProjectLanguages logos={repo.languages} />
+        </div>
+        <div className="repo-details Rightitem">
+          <ProjectLinks logos={repo.links} />
+        </div>
+      </div>
     </div>
   );
 }
