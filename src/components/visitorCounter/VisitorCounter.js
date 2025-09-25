@@ -27,25 +27,30 @@ function VisitorCounter({ theme }) {
         if (data.success) {
           setVisitorCount(data.data.totalUsers);
           setDataSource("analytics");
+          setShowCounter(true); // Only show if we get real data
         } else {
           throw new Error(data.message || "Failed to fetch data");
         }
       } catch (error) {
-        console.warn("Failed to fetch GA data, using fallback:", error);
-        // Fallback to localStorage if API fails
-        const storedCount = localStorage.getItem("portfolioVisitorCount");
-        const currentCount = storedCount ? parseInt(storedCount) + 1 : 1;
-        localStorage.setItem("portfolioVisitorCount", currentCount.toString());
-        setVisitorCount(currentCount);
-        setDataSource("local");
+        console.warn("Failed to fetch GA data:", error);
+        // Don't show counter if we can't get real data
+        setShowCounter(false);
       }
 
       setIsLoading(false);
-      setTimeout(() => setIsVisible(true), 1000);
+      // Only show with animation if we have real data
+      if (showCounter) {
+        setTimeout(() => setIsVisible(true), 1000);
+      }
     };
 
     fetchVisitorData();
-  }, []);
+  }, [showCounter]);
+
+  // Don't render anything if we can't fetch real data
+  if (!showCounter) {
+    return null;
+  }
 
   return (
     <div
