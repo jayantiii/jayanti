@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Main from "./containers/Main";
+import VisitorCounter from "./components/visitorCounter/VisitorCounter";
 import { ThemeProvider } from "styled-components";
 import { themes } from "./theme";
 import { GlobalStyles } from "./global";
@@ -37,6 +38,7 @@ function App() {
           ) : (
             <Main theme={themes[theme]} setTheme={setTheme} />
           )}
+          <VisitorCounter theme={themes[theme]} />
         </div>
       </>
     </ThemeProvider>
