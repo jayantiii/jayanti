@@ -235,6 +235,13 @@ const skills = {
           },
         },
         {
+          skillName: "Redux",
+          fontAwesomeClassname: "simple-icons:redux",
+          style: {
+            color: "#764ABC",
+          },
+        },
+        {
           skillName: "Python",
           fontAwesomeClassname: "fa-brands:python",
           style: {
@@ -360,6 +367,20 @@ const skills = {
           fontAwesomeClassname: "simple-icons:nginx",
           style: {
             color: "#009639",
+          },
+        },
+        {
+          skillName: "Go",
+          fontAwesomeClassname: "simple-icons:go",
+          style: {
+            color: "#00ADD8",
+          },
+        },
+        {
+          skillName: "Virtual Machines",
+          fontAwesomeClassname: "simple-icons:virtualbox",
+          style: {
+            color: "#183A61",
           },
         },
         // {
@@ -494,7 +515,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "At HPE, I developed key UI features for Alletra server management, including summary cards, device tables, and firmware updates, enhancing Hybrid Cloud capabilities. I automated inventory management, improving collaboration, and streamlined QA processes with a custom script, enhancing test coverage. Leveraging CI/CD pipelines and VMs, I optimized development and deployment workflows for greater efficiency.",
+    "Working on cloud-based system software solutions within HPE Hybrid Cloud using React, Redux, and TypeScript. Implemented features for server enablement, including summary dashboards, firmware management, and power actions. Automated processes with Python and Go, improving collaboration and efficiency. Contributed to CI/CD pipelines with Jenkins, Kubernetes orchestration, Linux environments, and VMs for large-scale system deployment and testing. Worked with NGINX for load balancing and infrastructure setup. These represent technologies I worked on extensively, while also briefly interacting with Kafka and PostgreSQL as needed for various projects.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -507,7 +528,17 @@ const experience = {
           logo_path: "avl.jpeg",
           duration: " 2024 - Present",
           location: "San diego, California",
-          description: "",
+          description:
+            "• Researching computer vision and perception systems for autonomous vehicles\n\n• Developing algorithms for object detection, tracking, and scene understanding\n\n• Collaborating with interdisciplinary teams on cutting-edge autonomous driving technologies",
+          skills: [
+            "Python",
+            "Computer Vision",
+            "Machine Learning",
+            "OpenCV",
+            "TensorFlow",
+            "PyTorch",
+            "Research",
+          ],
           color: "#0071C5",
         },
         {
@@ -518,7 +549,22 @@ const experience = {
           duration: "Aug 2023 - Aug 2024",
           location: "Bengaluru, India",
           description:
-            "Working on cloud-based system software solutions within HPE Hybrid Cloud. Implemented features for server enablement, including summary dashboards, firmware management, and power actions. Contributed to CI/CD pipelines and infrastructure setup for large-scale system deployment and testing.",
+            "• Reduced average server management time by over 35% by implementing a React-based UI integrated with backend microservices, featuring summary cards, device tables, notification pop-ups, and complex firmware update workflows\n\n• Authored detailed documentation and conducted onboarding sessions for 10+ new engineers in the team\n\n• Architected CI/CD pipelines and automated Rancher Kubernetes pod deployments for UI and API handler services using Jenkins, Helm, and Docker, eliminating 12+ hours of manual work per sprint and accelerating release cycles\n\n• Collaborated on the development of a scalable microservices platform, leveraging gRPC with Protocol Buffers and Nginx for high-performance, low-latency communication between services\n\n• Integrated automated testing frameworks like Cypress, Jest and pytest, increasing code coverage from 10% to over 95% and improving system reliability",
+          skills: [
+            "React",
+            "Redux",
+            "TypeScript",
+            "Python",
+            "Jenkins",
+            "Kubernetes",
+            "Docker",
+            "Helm",
+            "gRPC",
+            "Nginx",
+            "Cypress",
+            "Jest",
+            "pytest",
+          ],
           color: "#0071C5",
         },
         {
@@ -529,7 +575,16 @@ const experience = {
           duration: "Jan 2023 - July 2023",
           location: "Bengaluru, India",
           description:
-            "Enhanced UI with dynamic data and mock server integrations for scalability testing. Built key components such as device tables and power management actions. Collaborated with QA to develop reusable automation scripts, improving test efficiency and release cycles.",
+            "• Enhanced UI components with dynamic data integration and mock server implementations for comprehensive scalability testing\n\n• Developed key frontend components including device tables, power management actions, and interactive dashboards\n\n• Collaborated closely with QA teams to create reusable automation scripts and testing frameworks, significantly improving test efficiency and accelerating release cycles",
+          skills: [
+            "React",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Mock Servers",
+            "Testing",
+            "QA Automation",
+          ],
           color: "#0071C5",
         },
       ],
@@ -547,6 +602,7 @@ const experience = {
           description:
             "Developed a computer vision system in collaboration with the LEGO Group to accurately segment and estimate the 6D pose of LEGO elements, enhancing automation in the LEGO manufacturing process.",
           color: "#0071C5",
+          // ## https://docs.google.com/presentation/d/10mEQfvytchlWNDXuMMM8o18u5VVZIZnGj8VcnQ_wXZw/edit
         },
         {
           title: "Contributor - AI for Wind Energy",
@@ -554,6 +610,18 @@ const experience = {
           company_url:
             "https://www.fruitpunch.ai/challenges/ai-for-wind-energy",
           logo_path: "fp.jpg",
+          duration: "Oct 2022 - Feb 2022",
+          location: "Virtual Global Team",
+          description:
+            "Contributed to a global challenge applying AI for predictive maintenance in wind turbines. Worked on developing and evaluating ML pipelines using real-world sensor data to detect anomalies and improve fault prediction accuracy.",
+          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
+          color: "#0071C5",
+        },
+        {
+          title: "Natural Foundation - NGO",
+          company: "Natural Foundation and Natural Chess club",
+          company_url: "https://www.linkedin.com/company/natural-foundation/",
+          logo_path: "nf.jpeg",
           duration: "Oct 2020 - Feb 2022",
           location: "Virtual Global Team",
           description:
