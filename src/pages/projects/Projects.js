@@ -22,9 +22,6 @@ function Projects(props) {
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
   });
 
   const filterButtonStyles = style({
@@ -35,11 +32,6 @@ function Projects(props) {
     margin: "5px",
     borderRadius: "25px",
     cursor: "pointer",
-    transition: "all 0.3s ease",
-    ":hover": {
-      backgroundColor: "transparent",
-      color: theme.accentBright,
-    },
   });
 
   const activeFilterButtonStyles = style({
@@ -50,7 +42,6 @@ function Projects(props) {
     margin: "5px",
     borderRadius: "25px",
     cursor: "pointer",
-    transition: "all 0.3s ease",
   });
 
   return (
