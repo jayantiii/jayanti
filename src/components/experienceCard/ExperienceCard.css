@@ -73,6 +73,38 @@
   text-align: justify;
   margin-right: 20px;
   font-family: "Google Sans Regular";
+  white-space: pre-line;
+}
+
+.experience-card-skills {
+  margin-top: 12px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.experience-card-skills-label {
+  display: block;
+  font-family: "Google Sans Regular";
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.experience-card-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.experience-card-skill-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 16px;
+  border: 1px solid;
+  font-family: "Google Sans Regular";
+  font-size: 0.8rem;
 }
 
 .experience-card-company > a {
@@ -158,5 +190,10 @@
     margin-left: 14px;
     margin-right: 14px;
     text-align: justify;
+  }
+
+  .experience-card-skills {
+    margin-left: 14px;
+    margin-right: 14px;
   }
 }

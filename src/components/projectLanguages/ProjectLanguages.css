@@ -1,17 +1,33 @@
+.software-skills-main-div {
+  min-width: 0;
+}
+
 .dev-icons-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
   padding-left: 0;
   list-style: none;
-  font-size: 2rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: right;
+  font-size: 1.65rem;
+  margin: 0;
+  align-items: center;
 }
 
 .software-skill-inline-languages {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
   font-family: "Google Sans Regular";
+}
+
+.software-skill-inline-languages .iconify {
+  width: 1.65rem;
+  height: 1.65rem;
+  min-width: 1.65rem;
+  min-height: 1.65rem;
 }
 
 #tooltip-top > .tooltip-inner {
@@ -34,8 +50,20 @@
 } */
 
 @media (max-width: 768px) {
+  .dev-icons-languages {
+    gap: 8px 12px;
+    font-size: 1.5rem;
+  }
+
   .software-skill-inline-languages {
-    margin-right: 10px;
-    margin-bottom: 0px;
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .software-skill-inline-languages .iconify {
+    width: 1.5rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
   }
 }

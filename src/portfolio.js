@@ -18,7 +18,7 @@ const greeting = {
   
 Software Engineer with experience in cloud systems and Machine Learning.
 Seeking 2026 New Grad Software Engineering and AI roles.`,
-  resumeLink: "/resume/software eng_jayanti.pdf",
+  resumeLink: "/resume/",
   mail: "mailto:jlahoti@ucsd.edu",
 };
 
@@ -526,7 +526,7 @@ const experience = {
           company: "Autonomous Vehicle Lab @ UCSD",
           company_url: "https://avl.ucsd.edu/?page_id=83",
           logo_path: "avl.jpeg",
-          duration: " 2024 - Present",
+          duration: "2024 - Present",
           location: "San diego, California",
           description:
             "• Researching computer vision and perception systems for autonomous vehicles\n\n• Developing algorithms for object detection, tracking, and scene understanding\n\n• Collaborating with interdisciplinary teams on cutting-edge autonomous driving technologies",
@@ -543,7 +543,7 @@ const experience = {
         },
         {
           title: "System Software Engineer / Cloud Developer",
-          company: "Hewlett Packard Enterpse",
+          company: "Hewlett Packard Enterprise",
           company_url: "https://www.hpe.com/",
           logo_path: "hpe.png",
           duration: "Aug 2023 - Aug 2024",
@@ -569,7 +569,7 @@ const experience = {
         },
         {
           title: "Research and Development Intern",
-          company: "Hewlett Packard Enterpse",
+          company: "Hewlett Packard Enterprise",
           company_url: "https://www.hpe.com/",
           logo_path: "hpe.png",
           duration: "Jan 2023 - July 2023",
@@ -593,14 +593,23 @@ const experience = {
       title: "Other Experiences",
       experiences: [
         {
-          title: "Segmenation and Pose estimation in Collaboration with LEGO",
+          title: "Segmentation and Pose Estimation in Collaboration with LEGO",
           company: "The LEGO Group",
           company_url: "https://www.lego.com/",
           logo_path: "lego.png",
           duration: "August 2025",
           location: "Denmark",
           description:
-            "Developed a computer vision system in collaboration with the LEGO Group to accurately segment and estimate the 6D pose of LEGO elements, enhancing automation in the LEGO manufacturing process.",
+            "• Developed a computer vision system in collaboration with the LEGO Group to accurately segment and estimate the 6D pose of LEGO elements, enhancing automation in the LEGO manufacturing process\n\n• Worked on methods like YOLO segmentation, RANSAC, PnP, transformers and related techniques",
+          skills: [
+            "Python",
+            "PyTorch",
+            "OpenCV",
+            "YOLO",
+            "RANSAC",
+            "PnP",
+            "Transformers",
+          ],
           color: "#0071C5",
           // ## https://docs.google.com/presentation/d/10mEQfvytchlWNDXuMMM8o18u5VVZIZnGj8VcnQ_wXZw/edit
         },
@@ -613,8 +622,13 @@ const experience = {
           duration: "Oct 2022 - Feb 2022",
           location: "Virtual Global Team",
           description:
-            "Contributed to a global challenge applying AI for predictive maintenance in wind turbines. Worked on developing and evaluating ML pipelines using real-world sensor data to detect anomalies and improve fault prediction accuracy.",
-          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
+            "• Contributed to a global challenge applying AI for predictive maintenance in wind turbines\n\n• Worked on developing and evaluating ML pipelines using real-world sensor data to detect anomalies and improve fault prediction accuracy",
+          skills: [
+            "Python",
+            "Machine Learning",
+            "Sensor Data",
+            "Anomaly Detection",
+          ],
           color: "#0071C5",
         },
         {
@@ -625,8 +639,13 @@ const experience = {
           duration: "Oct 2020 - Feb 2022",
           location: "Virtual Global Team",
           description:
-            "Contributed to a global challenge applying AI for predictive maintenance in wind turbines. Worked on developing and evaluating ML pipelines using real-world sensor data to detect anomalies and improve fault prediction accuracy.",
-          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
+            "• Organized and hosted fundraising events during the COVID-19 pandemic and led community social initiatives\n\n• Served as a chess instructor, teaching and mentoring youth and new learners",
+          skills: [
+            "Event Organization",
+            "Community Outreach",
+            "Teaching",
+            "Mentoring",
+          ],
           color: "#0071C5",
         },
       ],
@@ -655,27 +674,74 @@ const projects = {
   data: [
     {
       id: "",
+      name: "LEGO Segmentation and Pose Estimation",
+      url:
+        "https://docs.google.com/presentation/d/10mEQfvytchlWNDXuMMM8o18u5VVZIZnGj8VcnQ_wXZw/edit",
+      description:
+        "Developed a computer vision system in collaboration with the LEGO Group to accurately segment and estimate the 6D pose of LEGO elements, enhancing automation in the LEGO manufacturing process",
+      category: "ML & AI",
+      languages: [
+        { name: "Python", iconifyClass: "logos-python" },
+        { name: "PyTorch", iconifyClass: "logos-pytorch" },
+        { name: "OpenCV", iconifyClass: "simple-icons:opencv" },
+      ],
+      links: [],
+    },
+    {
+      id: "",
+      name: "AI for Wind Energy",
+      url: "https://www.fruitpunch.ai/challenges/ai-for-wind-energy",
+      description:
+        "Contributed to a global challenge applying AI for predictive maintenance in wind turbines. Developed and evaluated ML pipelines using real-world sensor data to detect anomalies and improve fault prediction accuracy.",
+      category: "ML & AI",
+      languages: [{ name: "Python", iconifyClass: "logos-python" }],
+      links: [],
+    },
+    {
+      id: "",
       name: "Tryton - Underwater Drone",
       url:
-        "https://docs.google.com/presentation/d/14_-eYM9vmjBHniISU-A5tNljjWPsXSRbGckBbMMk77k/",
+        "https://www.youtube.com/watch?v=sqv7aKwFYuI&pp=ygUXdHJ5dG9uIHJvdiB1Y3NkIGpheWFudGk%3D",
       description:
         "Built Tryton, a fully 3D-printed underwater ROV integrating ArduPilot, QGroundControl, and Raspberry Pi for subaquatic exploration.",
       category: "IoT & Embedded",
       languages: [
+        { name: "Python", iconifyClass: "logos-python" },
+        { name: "C++", iconifyClass: "simple-icons:cplusplus" },
+        { name: "Raspberry Pi", iconifyClass: "simple-icons:raspberrypi" },
+        { name: "Linux", iconifyClass: "simple-icons:linux" },
+      ],
+      links: [
         {
-          name: "Python",
-          iconifyClass: "logos-python",
+          name: "Demonstration Video",
+          url:
+            "https://www.youtube.com/watch?v=sqv7aKwFYuI&pp=ygUXdHJ5dG9uIHJvdiB1Y3NkIGpheWFudGk%3D",
+          iconifyClass: "ri:youtube-fill",
         },
+      ],
+      images: ["lego.png", "gc.png"],
+      // video: "/videos/tryton-demo.mp4" // optional
+    },
+    {
+      id: "",
+      name: "RB5 - Autonomous Car",
+      url: "https://www.youtube.com/watch?v=To1DRw5Modg",
+      description:
+        "Implemented coverage-planning and autonomous navigation algorithms on a provided mobile robot, targeting full-area coverage in an 8ft×8ft test arena.",
+      category: "IoT & Embedded",
+      languages: [
+        { name: "Python", iconifyClass: "logos-python" },
+        { name: "ROS", iconifyClass: "simple-icons:ros" },
       ],
       links: [
         {
           name: "Github",
-          url: "",
+          url: "https://github.com/ModernOctave/rb5_ros2",
           iconifyClass: "ri:github-fill",
         },
         {
           name: "Demonstration Video",
-          url: "",
+          url: "https://www.youtube.com/watch?v=To1DRw5Modg",
           iconifyClass: "ri:youtube-fill",
         },
       ],
@@ -705,14 +771,16 @@ const projects = {
     },
     {
       id: "",
-      name: "Focus the unfocus extension",
+      name: "Focus the Unfocus Extension",
       url: "",
       description:
-        "A productivity Chrome extension that blocks distracting websites and shows interesting science, technology, and mystery articles instead. Stay focused for 20 minutes to earn a 5-minute break!",
+        "A productivity Chrome extension that blocks distracting websites and shows interesting science, technology, and mystery articles instead.",
       category: "Full-Stack",
       languages: [
         { name: "JavaScript", iconifyClass: "logos-javascript" },
         { name: "Chrome Extension", iconifyClass: "simple-icons:googlechrome" },
+        { name: "HTML", iconifyClass: "simple-icons:html5" },
+        { name: "CSS", iconifyClass: "simple-icons:css3" },
       ],
       links: [
         {
@@ -720,6 +788,24 @@ const projects = {
           url:
             "https://github.com/jayantiii/blockwebappswithbrainystuff.extension",
           iconifyClass: "ri:github-fill",
+        },
+      ],
+    },
+    {
+      id: "",
+      name: "Text to LLM Chrome extension",
+      url:
+        "https://chromewebstore.google.com/detail/text-to-llm/lencejfpjhpibekklebaljmjodgiifoj",
+      description:
+        "Chrome extension that sends highlighted text to an LLM for tasks like job cover letters and more, using the built-in Chrome AI API.",
+      category: "Full-Stack",
+      languages: [{ name: "JavaScript", iconifyClass: "logos-javascript" }],
+      links: [
+        {
+          name: "Demo",
+          url:
+            "https://chromewebstore.google.com/detail/text-to-llm/lencejfpjhpibekklebaljmjodgiifoj",
+          iconifyClass: "simple-icons:googlechrome",
         },
       ],
     },
@@ -816,6 +902,41 @@ const projects = {
     },
     {
       id: "",
+      name: "Scheduling With Wearable Integration",
+      url: "",
+      description:
+        "Built a voice scheduling assistant (Amazon Echo) with a persistent background app for effortless task add/edit/check. Developed a smartwatch companion with haptic alerts.",
+      category: "IOT & Embedded",
+      languages: [
+        {
+          name: "Android Studio",
+          iconifyClass: "simple-icons:androidstudio",
+        },
+        {
+          name: "XML",
+          iconifyClass: "mdi:xml",
+        },
+        {
+          name: "Google Calendar API",
+          iconifyClass: "simple-icons:googlecalendar",
+        },
+        {
+          name: "Amazon Echo",
+          iconifyClass: "simple-icons:amazonalexa",
+        },
+        {
+          name: "Amazon Developer",
+          iconifyClass: "simple-icons:amazon",
+        },
+        {
+          name: "AWS Lambda",
+          iconifyClass: "simple-icons:awslambda",
+        },
+      ],
+      links: [],
+    },
+    {
+      id: "",
       name: "Eye Gaze Tracking",
       url: "https://github.com/jayantiii/eye_gaze_tracking",
       description:
@@ -836,6 +957,34 @@ const projects = {
         {
           name: "Demonstration Video",
           url: "https://youtu.be/465mp30k1UY",
+          iconifyClass: "ri:youtube-fill",
+        },
+      ],
+    },
+    {
+      id: "",
+      name: "Classroom Management Platform",
+      url: "https://youtu.be/HbJ1dxnSR9g",
+      description:
+        "Led a 13 memeber team to build a full-stack classroom and course management platform for organizing courses, attendance, and student workflows.",
+      category: "Full-Stack",
+      languages: [
+        { name: "HTML", iconifyClass: "simple-icons:html5" },
+        { name: "CSS", iconifyClass: "simple-icons:css3" },
+        { name: "JavaScript", iconifyClass: "logos-javascript" },
+        { name: "PostgreSQL", iconifyClass: "simple-icons:postgresql" },
+        { name: "Prisma", iconifyClass: "simple-icons:prisma" },
+        { name: "AWS", iconifyClass: "simple-icons:amazonaws" },
+      ],
+      links: [
+        {
+          name: "Github",
+          url: "https://github.com/CSE210-FA25-Team05/cse-210-conductor-app",
+          iconifyClass: "ri:github-fill",
+        },
+        {
+          name: "Demonstration Video",
+          url: "https://youtu.be/HbJ1dxnSR9g",
           iconifyClass: "ri:youtube-fill",
         },
       ],

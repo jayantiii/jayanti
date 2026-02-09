@@ -70,7 +70,11 @@ function Projects(props) {
       <div className="repo-cards-div-main">
         {filteredProjects.map((repo, index) => {
           return (
-            <ProjectCard repo={repo} theme={theme} key={repo.id || index} />
+            <ProjectCard
+              repo={repo}
+              theme={theme}
+              key={`project-${index}-${repo.name}`}
+            />
           );
         })}
       </div>

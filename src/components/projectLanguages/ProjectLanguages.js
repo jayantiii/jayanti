@@ -3,11 +3,13 @@ import "./ProjectLanguages.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 function ProjectLanguages(props) {
+  const logos = props.logos || [];
+
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons-languages">
-          {props.logos.map((logo) => {
+          {logos.map((logo) => {
             return (
               <OverlayTrigger
                 key={logo.name}

@@ -3,17 +3,18 @@ import "./ProjectLinks.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 function ProjectLinks(props) {
+  const logos = props.logos || [];
+
   function openRepoinNewTab(url) {
     var win = window.open(url, "_blank");
     win.focus();
   }
 
-  console.log(props);
   return (
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons-languages">
-          {props.logos.map((logo) => {
+          {logos.map((logo) => {
             return (
               <OverlayTrigger
                 key={logo.name}

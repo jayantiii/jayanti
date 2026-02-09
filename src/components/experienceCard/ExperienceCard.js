@@ -59,6 +59,31 @@ function ExperienceCard(props) {
         >
           {experience["description"]}
         </p>
+        {experience["skills"] && experience["skills"].length > 0 && (
+          <div className="experience-card-skills">
+            <span
+              className="experience-card-skills-label"
+              style={{ color: theme.secondaryText }}
+            >
+              Tech stack
+            </span>
+            <div className="experience-card-skills-list">
+              {experience["skills"].map((skill, idx) => (
+                <span
+                  key={idx}
+                  className="experience-card-skill-pill"
+                  style={{
+                    color: theme.text,
+                    borderColor: experience["color"] || theme.secondaryText,
+                    backgroundColor: theme.imageDark,
+                  }}
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
